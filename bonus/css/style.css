@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color:#EDEBE9;
+}
+ .float-left{
+   float: left;
+ }
+ .float-right{
+   float: right;
+ }
+ .clear-fix{
+   content: "";
+   display: table;
+   clear: both;
+ }
+.col-scacchi{
+    width: calc( 100% /8 *1);
+    position: relative;
+}
+.col-1{
+  width: calc(100% / 12 * 1)
+}
+
+.col-2{
+  width: calc(100% / 12 * 2)
+}
+
+.col-3{
+  width: calc(100% / 12 * 3)
+}
+
+.col-4{
+  width: calc(100% / 12 * 4)
+}
+
+.col-5{
+  width: calc(100% / 12 * 5)
+}
+
+.col-6{
+  width: calc(100% / 12 * 6)
+}
+
+.col-7{
+  width: calc(100% / 12 * 7)
+}
+
+.col-8{
+  width: calc(100% / 12 * 8)
+}
+
+.col-9{
+  width: calc(100% / 12 * 9)
+}
+
+.col-10{
+  width: calc(100% / 12 * 10)
+}
+
+.col-11{
+  width: calc(100% / 12 * 11)
+}
+
+.col-12{
+  width: calc(100% / 12 * 12)
+}
+
+.container{
+    max-width: 850px;
+    max-height: 780px;
+    margin: 0 auto;
+    margin-top:100px;
+    margin-bottom:100px ;
+    box-shadow: 0 0 10px rgba(49, 49, 49, 0.644); 
+  }
+  
+  .row::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .row{
+    height: 100px;
+  }
+  .row [class*="col-"]{
+    float: left;
+    height: 100%; 
+  }
+  .row .col-scacchi{
+      background-color: #F0D9B5;
+      border: 1px solid black;
+  }
+  /* Posizionamento lettere in basso a sinistra */
+  .container .row:last-child .col-scacchi span {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    color: black;
+    text-transform: uppercase;
+  }
+  /* Posizionamento numeri in alto a destra*/
+  .container .row .col-scacchi:last-child span:last-child {
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    color: black;
+  }
+  .container .row:nth-child(even) .col-scacchi:nth-child(odd){
+    background-color: #B58863;
+  }
+  .container .row:nth-child(odd) .col-scacchi:nth-child(even){
+    background-color: #B58863;
+  }
+  .nav-bar{
+    
+    height: 100px;
+  }
+  
+
+ 
