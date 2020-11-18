@@ -5,6 +5,8 @@
   }
 body{
     background-color:#EDEBE9;
+    margin: 20px;
+    font-family: 'Noto Sans', Sans-Serif;
 }
  .float-left{
    float: left;
@@ -116,9 +118,27 @@ body{
     background-color: #B58863;
   }
   .nav-bar{
-    
-    height: 100px;
+    width: 100%;
+    line-height: 10px;
   }
   
-
- 
+  .nav-bar a{
+    text-decoration: none;
+    color: #4D4D53;
+    font-size: 16px;
+    padding: 30px 20px;
+    text-transform: uppercase;
+  }
+  .nav-bar .left a:first-child{
+    font-size:40px;
+    text-transform: none;
+  }
+  .nav-bar .left a:first-child:hover{
+    color: blue;
+  }
+  .nav-bar .left a:nth-child(n+2):hover{
+    background-color: white;
+  }
+  .nav-bar .right a{
+    padding: 30px 10px;
+  }
