@@ -75,7 +75,7 @@ body{
     max-width: 850px;
     max-height: 780px;
     margin: 0 auto;
-    margin-top:100px;
+    margin-top:50px;
     margin-bottom:100px ;
     box-shadow: 0 0 10px rgba(49, 49, 49, 0.644); 
   }
@@ -87,6 +87,7 @@ body{
   }
   .row{
     height: 100px;
+    
   }
   .row [class*="col-"]{
     float: left;
@@ -94,7 +95,7 @@ body{
   }
   .row .col-scacchi{
       background-color: #F0D9B5;
-      border: 1px solid black;
+      position: relative;
   }
   /* Posizionamento lettere in basso a sinistra */
   .container .row:last-child .col-scacchi span {
@@ -111,12 +112,22 @@ body{
     left: 90%;
     color: black;
   }
+ 
   .container .row:nth-child(even) .col-scacchi:nth-child(odd){
     background-color: #B58863;
   }
+  
   .container .row:nth-child(odd) .col-scacchi:nth-child(even){
     background-color: #B58863;
   }
+  .container .row:nth-child(2) .col-scacchi i, .row:nth-child(7) .col-scacchi i{
+      font-size: 70px;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+}
+
   .nav-bar{
     width: 100%;
     line-height: 10px;
